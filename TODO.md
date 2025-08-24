@@ -6,10 +6,10 @@
 
 * [ ] Implémenter un LRU cache avec :
 
-  * [ ] `get(key)`: retourne la valeur ou -1
-  * [ ] `put(key, value)`: insère ou met à jour une paire
-  * [ ] Capacité fixe avec éviction LRU
-  * [ ] Complexité : O(1) pour `get` et `put`
+  * [x] `get(key)`: retourne la valeur ou -1
+  * [x] `put(key, value)`: insère ou met à jour une paire
+  * [x] Capacité fixe avec éviction LRU
+  * [x] Complexité : O(1) pour `get` et `put`
 
 ---
 
