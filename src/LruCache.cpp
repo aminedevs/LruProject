@@ -14,6 +14,8 @@ int Lru::get(int key)
 
 void Lru::put(int key, int value)
 {
+    if (mCapacity == 0)
+        return;
     auto it = mMap.find(key);
     if (it != mMap.end())
     {
