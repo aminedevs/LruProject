@@ -15,9 +15,9 @@
 
 #### 🧪 **Étape 2 : Écriture de tests**
 
-* [ ] Cas de base (insertion, lecture, eviction)
-* [ ] Mise à jour d’une clé
-* [ ] Clé absente
+* [x] Cas de base (insertion, lecture, eviction)
+* [x] Mise à jour d’une clé
+* [x] Clé absente
 * [ ] Rotation dans la liste LRU
 * [ ] Stress test (insertion massive)
 
