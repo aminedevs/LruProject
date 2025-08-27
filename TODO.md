@@ -18,17 +18,17 @@
 * [x] Cas de base (insertion, lecture, eviction)
 * [x] Mise à jour d’une clé
 * [x] Clé absente
-* [ ] Rotation dans la liste LRU
-* [ ] Stress test (insertion massive)
+* [x] Rotation dans la liste LRU
+* [x] Stress test (insertion massive)
 
 ---
 
 #### ⚙️ **Étape 3 : Organisation & Clean Code**
 
-* [ ] Séparer le code LRU dans un fichier `LruCache.hpp`
-* [ ] Ajouter un fichier `main.cpp` pour les tests
-* [ ] Ajouter un `CMakeLists.txt` si besoin
-* [ ] Ajouter des assertions ou un mini framework de test
+* [x] Séparer le code LRU dans un fichier `LruCache.hpp`
+* [x] Ajouter un fichier `main.cpp` pour les tests
+* [x] Ajouter un `CMakeLists.txt` si besoin
+* [x] Ajouter des assertions ou un mini framework de test
 
 ---
 
@@ -36,11 +36,11 @@
 
 * [ ] Implémenter un routeur simple :
 
-  * [ ] Fonction `hash(key) -> node`
-  * [ ] 3 instances de `LruCache`
-* [ ] Le routeur redirige `get/put` vers le bon nœud
-* [ ] Ajout de logs pour voir où va chaque clé
-
+* [x] Fonction `hash(key) -> node`
+* [x] 3 instances de `LruCache`
+* [x] Le routeur redirige `get/put` vers le bon nœud
+* [x] Ajout de logs pour voir où va chaque clé
+* [ ] Fonction `hash autre que modulo`
 ---
 
 #### 🧩 **Option B : Réplication**
