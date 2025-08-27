@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-add_library(LruLib src/LruCache.cpp)
+add_library(LruLib src/LruCache.cpp src/LruNode.cpp src/Router.cpp)
 target_include_directories(LruLib PUBLIC include)
 
 # Add sources
