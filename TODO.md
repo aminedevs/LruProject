@@ -40,7 +40,8 @@
 * [x] 3 instances de `LruCache`
 * [x] Le routeur redirige `get/put` vers le bon nœud
 * [x] Ajout de logs pour voir où va chaque clé
-* [ ] Fonction `hash autre que modulo`
+
+* [x] Fonction `hash autre que modulo`
 ---
 
 #### 🧩 **Option B : Réplication**
