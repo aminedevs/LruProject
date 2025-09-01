@@ -1,5 +1,6 @@
 #include <Router.hpp>
 #include <iostream>
+#include <functional>
 
 Router::Router(int nodes, int capacity) : mSize(nodes)
 {
@@ -11,14 +12,22 @@ Router::Router(int nodes, int capacity) : mSize(nodes)
 
 void Router::Insert(int key, int value)
 {
-    auto dispatch = key % mSize;
-    std::cout << "routing to node " << dispatch << std::endl;
+    auto dispatch = GetDispatchId(key);
+    std::cout
+        << "routing to node " << dispatch << std::endl;
     mNodes[dispatch].Put(key, value);
 }
 
 int Router::Request(int key)
 {
-    auto dispatch = key % mSize;
+    auto keyHash = std::hash<int>{}(key);
+    auto dispatch = keyHash % mSize;
     std::cout << "routing to node " << dispatch << std::endl;
     return mNodes[dispatch].Get(key);
+}
+
+int Router::GetDispatchId(int key) const
+{
+    auto keyHash = std::hash<int>{}(key);
+    return keyHash % mSize;
 }
